@@ -1,0 +1,94 @@
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #6c63ff, #2b2d42);
+    color: #ffffff;
+}
+
+.rounded-form {
+    background: #ffffff;
+    color: #2b2d42;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    width: 400px;
+    text-align: center;
+}
+
+.rounded-form h1 {
+    margin-bottom: 20px;
+    color: #6c63ff;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    outline: none;
+    transition: border 0.3s;
+    font-size: 14px;
+}
+
+input:focus {
+    border-color: #6c63ff;
+}
+
+input.valid {
+    border-color: #4caf50;
+}
+
+input.invalid {
+    border-color: #f44336;
+}
+
+.error-message {
+    color: #f44336;
+    font-size: 12px;
+    margin-top: 5px;
+    display: none;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    background: #6c63ff;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover:not(:disabled) {
+    background: #5149cb;
+}
+
+button:disabled {
+    background: #cccccc;
+    cursor: not-allowed;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
